@@ -1,5 +1,15 @@
+import { useState } from "react";
+import Button from "./button/Button";
+import User from "./user/User";
+import { USERS } from "./constants/users";
 
 const App = () => {
-  return  <h1>React</h1>;
+  const [position, setPosition] = useState(0)
+  return (
+    <>
+    <User position={position} info={USERS}></User>
+    <Button position={position} setPosition={setPosition}></Button>
+    </>
+  )
 };
 export default App;

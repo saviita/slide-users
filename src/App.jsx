@@ -5,6 +5,7 @@ import { USERS } from "./constants/users";
 
 const App = () => {
   const [position, setPosition] = useState(0)
+  console.log(position)
   return (
     <>
     <User position={position} info={USERS}></User>

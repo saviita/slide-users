@@ -18,7 +18,7 @@ const previous = (position, setPosition) => {
     } else {
         counter = 1
     }
-    setPosition(position + counter)
+    setPosition(position - counter)
 }
 
 const next = (position, setPosition) => {
@@ -29,5 +29,5 @@ const next = (position, setPosition) => {
     } else {
         counter = 1
     }
-    setPosition(position - counter)
+    setPosition(position + counter)
 }
